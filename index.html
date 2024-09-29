@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: antiquewhite;
+        }
+        body{
+            /*background-image: url(ball.png);*/
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: left top;
+        }
+        #Ogo1{
+            height: 300px;
+            background:linear-gradient(to bottom, purple,red);
+        }
+        #Ogo2{
+            height: 300px;
+            background:radial-gradient( circle, black 0.05%,white);
+        }
+        #Ogo3{
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+            animation-name: Ogo;
+            animation-duration: 10s;
+        }
+        @keyframes Ogo{
+            0% {background-color: aliceblue;}
+            25% {background-color: aqua;}
+            50% {background-color: blue;}
+            75% {background-color: cadetblue;}
+            100% {background-color: darkblue;}
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Any message
+    </p>
+    <div id="Ogo1"></div> <br> <br> <br>
+    <div id="Ogo2"></div> <br><br><br>
+    <div id="Ogo3"></div>
+</body>
+</html>
